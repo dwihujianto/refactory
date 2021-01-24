@@ -27,12 +27,11 @@ console.log("Find users who have 'annis' on their name.", annis);
 
 // Find users who have articles on year 2020.
 article2020 = users.filter(user => {
-	if (user.articles.length > 0) {
-		for(i in user.articles) {
-			const date = new Date(user.articles[i].published_at);
-			return date.getFullYear() == 2020;
-		}
-	}
+	const articlePublishAt2020 = user.articles.filter(article => {
+		return new Date(article.title.published_at).getFullYear() == 2020;
+	});
+
+	return articlePublishAt2020.length > 0;
 });
 console.log("Find users who have articles on year 2020.", article2020);
 
