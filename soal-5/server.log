@@ -1,0 +1,4 @@
+
+2021/01/24 11:43:07 Success : POST http://localhost:2021/receiver {"counter": 1, "X-RANDOM":"BpLnfgDs"}
+2021/01/24 11:44:07 Success : POST http://localhost:2021/receiver {"counter": 2, "X-RANDOM":"c2WD8F2q"}
+2021/01/24 11:45:07 Success : POST http://localhost:2021/receiver {"counter": 3, "X-RANDOM":"NfHK5a84"}
